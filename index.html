@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Game Button -->
+    <div id="start-screen">
+        <button id="start-game-btn" class="button">Start Game</button>
+    </div>
+
+    <!-- Hidden game container, will be shown after starting the game -->
+    <div id="game-container" class="game-container hidden">
+        <div class="game-header">
+            <h1>Math Game</h1>
+            <p>Solve the equation by filling in the missing value</p>
+        </div>
+
+        <div class="question-box">
+            <div id="question"></div>
+        </div>
+
+        <div class="controls">
+            <input type="number" id="answer" placeholder="Enter your answer" class="input-box">
+            <button id="submit-btn" class="button">Submit</button>
+        </div>
+
+        <p id="result" class="result"></p>
+        <button id="start-btn" class="button">New Question</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
